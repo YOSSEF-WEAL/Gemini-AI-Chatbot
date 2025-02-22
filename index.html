@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gemini-AI-Chatbot</title>
+    <!-- Link Google Fonts For Icons -->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="container">
+        <!-- App Header -->
+        <header class="app-header">
+            <h1 class="heading">Hello, There</h1>
+            <h2 class="sub-heading">How Can I Help You?</h2>
+        </header>
+        <!-- suggestions list -->
+        <ul class="suggestions">
+            <li class="suggestion-item">
+                <p class="text">Design a Home Affice setup for Remote Work Under $500.</p>
+                <span class="material-symbols-rounded">
+                    draw
+                </span>
+            </li>
+            <li class="suggestion-item">
+                <p class="text">How Can I Level Up My Wep Development Expertise in 2025?</p>
+                <span class="material-symbols-rounded">
+                    lightbulb
+                </span>
+            </li>
+            <li class="suggestion-item">
+                <p class="text">Suggest Some Useful Tools For Debugging JavaScript Code.</p>
+                <span class="material-symbols-rounded">
+                    explore
+                </span>
+            </li>
+            <li class="suggestion-item">
+                <p class="text">Create a React.Js Component For The Simple Todo List app.</p>
+                <span class="material-symbols-rounded">
+                    code_blocks
+                </span>
+            </li>
+        </ul>
+
+        <!-- Chats container -->
+        <div class="chats-container">
+
+        </div>
+
+
+        <div class="" style="height: 130px;"></div>
+        <!-- prompt container -->
+        <div class="prompt-container">
+            <div class="prompt-welpper">
+                <form action="#" class="prompt-form">
+                    <input required type="text" placeholder="Ask Gemini" class="prompt-input">
+                    <div class="prompt-actions">
+
+                        <!-- fille upload welpper -->
+                        <div class="fille-upload-welpper  ">
+                            <img src="#" alt="" class="file-preview">
+
+                            <input type="file" accept="image/*, .pdf, .txt, .csv" id="file-input" hidden>
+
+                            <button type="button" class="file-icon  material-symbols-rounded">
+                                description
+                            </button>
+                            <button id="add-file-btn" type="button" class="material-symbols-rounded">
+                                attach_file
+                            </button>
+
+                            <button id="cancle-file-btn" type="button" class="material-symbols-rounded">
+                                close
+                            </button>
+                        </div>
+
+
+                        <button id="stop-response-btn" type="button" class="material-symbols-rounded">
+                            stop_circle
+
+                        </button>
+                        <button id="send-prompt-btn" type="submit" class="material-symbols-rounded">
+                            arrow_upward
+                        </button>
+                    </div>
+                </form>
+                <button id="theme-toggle-btn" type="button" class="material-symbols-rounded">
+                    light_mode
+                </button>
+                <button id="delete-chats-btn" type="button" class="material-symbols-rounded">
+                    delete
+                </button>
+            </div>
+
+            <p class="disclaimer-text">
+                <img src="./logo.png" alt="">
+                created by
+                <a target="_blank" href="https://yossef-weal.github.io/my-site/Portfolio.html">Yossef Weal</a>
+            </p>
+
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+
+</html>
